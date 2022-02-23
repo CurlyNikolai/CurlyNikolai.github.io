@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<title>Emil Levo Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    hr.new1 {
+        border-top: 1px solid black;
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+
+    /* if the screen is wider than 500px set the font size to 80px */
+    @media screen and (min-width: 500px) {
+        .dynamicallyScale {
+            font-size: 80px;
+        }
+    }
+
+    /*if the screen size is less than 499px set the font size to 80px */
+    @media screen and (max-width: 499px) {
+        .dynamicallyScale {
+            font-size: 30px;
+        }
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+</style>
+
+<body class="w3-white">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="/images/profpic.jpg" style="width:100%">
+        <a href="/#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <div class="w3-dropdown-hover">
+            <a href="/#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>ABOUT</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">CV</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#research" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-atom w3-xxlarge"></i>
+                <p>RESEARCH</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/Radiation_damage.html" class="w3-bar-item w3-button w3-hover-blue"
+                    style="text-decoration:None;">Radiation Damage in High Entropy Alloys</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#games" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-gamepad w3-xxlarge"></i>
+                <p>GAMES</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/zeus.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">ZEUS</a>
+            </div>
+        </div>
+        <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="/#" class="w3-bar-item w3-button" style="text-decoration:None;width:20% !important">HOME</a>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#about';" class="w3-button">ABOUT</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/CV.html" class="w3-bar-item w3-button" style="text-decoration:None;">CV</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#research';" class="w3-button">RESEARCH</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/Radiation_damage.html" class="w3-bar-item w3-button" style="text-decoration:None;">Radiation
+                        Damage in High Entropy Alloys</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#games';" class="w3-button">GAMES</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/zeus.html" class="w3-bar-item w3-button" style="text-decoration:None;">ZEUS</a>
+                </div>
+            </div>
+            <a href="/#contact" class="w3-bar-item w3-button" style="text-decoration:None;width:20% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-white">
+            <h1 class="w3-jumbo">Curriculum Vitae</h1>
+        </header>
+
+        <!-- Education Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Education</h2>
+            <hr style="width:200px;" class="new1">
+            <strong>Doctor of Philosophy, University of Helsinki, 2022</strong><br>
+            Doctoral Programme in Materials Research and Nanoscience
+            <br><br>
+
+            <strong>Master of Science, University of Helsinki, 2019</strong><br>
+            Master's Programme in Materials Research<br>
+            Line: Computational Materials Physics
+            <br><br>
+            
+            <strong>Bachelor of Science, University of Helsinki, 2017</strong><br>
+            Degree Programme in Physical Sciences
+            Major: Theoretical Physics
+            <br><br>
+            
+            <strong>Matriculation Examination, Gymnasiet Lärkan, 2014</strong><br>
+            <!-- End Education Section -->
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Work Experience</h2>
+            <hr style="width:200px;" class="new1">
+            <strong>Doctoral Researcher, University of Helsinki, 2019-2021</strong><br>
+            Compuational research of radiation damage in high entropy alloys for fusion reactor applications.
+            <br><br>
+
+            <strong>Teaching Assistant, University of Helsinki, 2017-2021</strong><br>
+            Courses:
+            <ul>
+                <li>Mathematics for Physicists I:</li>
+                    <ul>
+                        <li>Basics of vector calculus, power series, differential calculus, integral calculus</li>
+                    </ul>
+                <li>Mathematics for Physicists II:</li>
+                    <ul>
+                        <li>Complex numbers, ordinary differential equations, vector calculus</li>
+                    </ul>
+                <li>Mathematics for Physicists III:</li>
+                    <ul>
+                        <li>Linear algebra, vector calculus</li>
+                    </ul>
+            </ul>
+            <br>
+
+            <strong>Research Assistant, University of Helsinki, 2015-2019</strong><br>
+            Computational research of irradiation damage in high entropy alloys for fusion reactor applications.
+            <br><br>
+
+            <strong>Museum Guard, Rilaxmonumentets traditionsförening r.f.</strong><br>
+            Guarding and giving guided tours at an exhibit honouring the 300th anniversary of a naval battle
+            fought in the Gulf of Finland.
+            <br><br>
+            <!-- End Work Experience Section -->
+        </div>
+
+        <!-- Programming Languages Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Programming Languages</h2>
+            <hr style="width:200px;" class="new1">
+            <ul>
+                <li>Python</li>
+                <li>Bash</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Fortran</li>
+                <li>Java</li>
+            </ul>
+            <!-- End Programming Languages Section -->
+        </div>
+
+        <!-- Spoken Languages Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Spoken Languages</h2>
+            <hr style="width:200px;" class="new1">
+            <ul>
+                <li>English (fluent)</li>
+                <li>Swedish (native)</li>
+                <li>Finnish (native)</li>
+            </ul>
+            <!-- End Spoken Languages Section -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://github.com/CurlyNikolai"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/emil-levo"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>

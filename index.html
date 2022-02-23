@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>Emil Levo Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    hr.new1 {
+        border-top: 1px solid black;
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+
+        /* if the screen is wider than 500px set the font size to 80px */
+    @media screen and (min-width: 500px) {
+    .dynamicallyScale {
+        font-size: 80px;
+    }
+    }
+    /*if the screen size is less than 499px set the font size to 80px */
+    @media screen and (max-width: 499px) {
+    .dynamicallyScale {
+        font-size: 30px;
+    }
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+
+</style>
+
+<body class="w3-white">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="/images/profpic.jpg" style="width:100%">
+        <a href="/#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <div class="w3-dropdown-hover">
+            <a href="/#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>ABOUT</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">CV</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#research" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-atom w3-xxlarge"></i>
+                <p>RESEARCH</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/Radiation_damage.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">Radiation Damage in High Entropy Alloys</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#games" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-gamepad w3-xxlarge"></i>
+                <p>GAMES</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/zeus.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">ZEUS</a>
+            </div>
+        </div>
+        <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="/#" class="w3-bar-item w3-button" style="text-decoration:None;width:20% !important">HOME</a>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#about';" class="w3-button">ABOUT</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/CV.html" class="w3-bar-item w3-button" style="text-decoration:None;">CV</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#research';" class="w3-button">RESEARCH</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/Radiation_damage.html" class="w3-bar-item w3-button" style="text-decoration:None;">Radiation
+                        Damage in High Entropy Alloys</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#games';" class="w3-button">GAMES</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/zeus.html" class="w3-bar-item w3-button" style="text-decoration:None;">ZEUS</a>
+                </div>
+            </div>
+            <a href="/#contact" class="w3-bar-item w3-button" style="text-decoration:None;width:20% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+            <h1 class="w3-jumbo">Emil Levo</h1>
+            <p>Computational Physicist<br>Game Design Student</p>
+            <img src="images/profpic.jpg" alt="asd" class="w3-image" width="500" height="600">
+        </header>
+
+        <!-- About Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-64" id="about">
+            <h2>About Me</h2>
+            <hr style="width:200px;" class="new1">
+            <p>
+                Hi, I'm Emil.
+                <br>
+                I'm a twenty-something year old computational physicist from Helsinki, 
+                currently studying game design and production at
+                Aalto University.
+            </p>
+
+            <a href="/CV.html" class="w3-button w3-light-grey" style="text-decoration:None;">
+                <i class="fa-regular fa-file"></i> Online CV
+            </a>
+            <!-- Download button for CV -->
+            <a href="/Emil_Levo_CV.pdf" class="w3-button w3-light-grey" download="CV" style="text-decoration:None;">
+                <i class="fa fa-download"></i> Download CV
+            </a>
+
+            <!-- End About Section -->
+        </div>
+        
+        <!-- Research Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-64" id="research">
+            <h2>Research</h2>
+            <hr style="width:200px;", class="new1">
+
+            <a href="/Radiation_damage.html">
+                <h3>Radiation Damage in High Entropy Alloys</h3>
+            </a>
+            <p>
+                As a doctoral researcher at the University of Helsinki, I studied radiation damage in high entropy alloys, in the
+                context of structural components for nuclear reactors. All studies were purely computational, using molecular dynamics
+                to simulate prolonged irradiation in the investigated materials. Results from the studies were published in several
+                peer-reviewed articles, as well as my doctoral dissertation “Radiation Damage in High Entropy Alloys”
+            </p>
+
+
+            <button onclick="myFunction('Defence')" class="w3-button w3-block w3-light-grey w3-left-align">Doctoral Defence <i class="fa fa-caret-down"></i></button>
+            <div id="Defence" class="w3-hide">
+                <div class="w3-center w3-black w3-animate-zoom">
+                    <iframe width="480" height="360" src="https://www.youtube.com/embed/bZREgHPAyFU" allowfullscreen="allowfullscreen" video="width:auto;height:100%"></iframe>
+                </div>
+            </div>
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-light-grey w3-left-align">Publications <i class="fa fa-caret-down"></i></button>
+            <div id="Demo1" class="w3-hide w3-animate-zoom">
+                <ul>
+                <li><a href="https://helda.helsinki.fi/handle/10138/337574" class="w3-block w3-left-align">Radiation Damage in High Entropy Alloys (doctoral dissertation)</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S0927025621002986?via%3Dihub" class="w3-block w3-left-align">Temperature effect on irradiation damage in equiatomic multi-component alloys</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0022311516313484?via%3Dihub" class="w3-block w3-left-align">Radiation damage buildup and dislocation evolution in Ni and equiatomic multicomponent Ni-based alloys</a></li>
+                <li><a href="https://link.springer.com/article/10.1557/jmr.2019.19" class="w3-block w3-left-align">Radiation stability of nanocrystalline single-phase multicomponent alloys</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168583X16304827?via%3Dihub" class="w3-block w3-left-align">Damage buildup and edge dislocation mobility in equiatomic multicomponent alloys</a></li>
+                </ul>
+            </div>
+            
+            <script>
+                function myFunction(id) {
+                    var x = document.getElementById(id);
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                    }
+                }
+            </script>
+
+            <!-- End Research Section -->
+        </div>
+
+        <!-- Games Section -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-64" id="games">
+            <h2 class="w3-text-black">Games</h2>
+            <hr style="width:200px" class="new1">
+
+            <!-- Project 1 -->
+            <div class="w3-row-padding w3-margin-top">
+                <a href="/zeus.html">
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-opacity-min w3-hover-opacity-off">
+                        <img src="images/zeus.png" style="width:100%">
+                        <div class="w3-container">
+                            <strong>ZEUS</strong>
+                            <p>Arcady mini game created for the Global Game Jam 20-30 January 2020. Goal of the game is to remove all polluting
+                            elements from the globe, before the planet’s atmosphere is destroyed.</p>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- End Games Section -->
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-black" id="contact">
+            <h2>Contact Me</h2>
+            <hr style="width:200px" class="new1">
+        
+            <div class="w3-section">
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: emil.levo@outlook.com
+                </p>
+            </div><br>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://github.com/CurlyNikolai"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/emil-levo"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>

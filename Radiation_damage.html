@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>Emil Levo Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    hr.new1 {
+        border-top: 1px solid black;
+    }
+
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+        width: 120px;
+        background: #222;
+    }
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+        margin-left: 120px
+    }
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+        #main {
+            margin-left: 0
+        }
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+</style>
+
+<body class="w3-white">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="/images/profpic.jpg" style="width:100%">
+        <a href="/#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <div class="w3-dropdown-hover">
+            <a href="/#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>ABOUT</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">CV</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#research" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-atom w3-xxlarge"></i>
+                <p>RESEARCH</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/Radiation_damage.html" class="w3-bar-item w3-button w3-hover-blue"
+                    style="text-decoration:None;">Radiation Damage in High Entropy Alloys</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#games" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-gamepad w3-xxlarge"></i>
+                <p>GAMES</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/zeus.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">ZEUS</a>
+            </div>
+        </div>
+        <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="/#" class="w3-bar-item w3-button" style="text-decoration:None;width:20% !important">HOME</a>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#about';" class="w3-button">ABOUT</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/CV.html" class="w3-bar-item w3-button" style="text-decoration:None;">CV</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#research';" class="w3-button">RESEARCH</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/Radiation_damage.html" class="w3-bar-item w3-button" style="text-decoration:None;">Radiation
+                        Damage in High Entropy Alloys</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover">
+                <button onclick="window.location.href='/#games';" class="w3-button">GAMES</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/zeus.html" class="w3-bar-item w3-button" style="text-decoration:None;">ZEUS</a>
+                </div>
+            </div>
+            <a href="/#contact" class="w3-bar-item w3-button" style="text-decoration:None;width:20% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-white" id="main">
+            <h1 class="w3-jumbo">Radiation Damage in High Entropy Alloys</h1><br><br>
+            <img src="images/ternary.png" alt="ternary" class="w3-image" width="400" height="400">
+            <img src="images/entropy_equation.jpg" alt="equation" class="w3-image" width="400" height="400"><br><br>
+        </header>
+        
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Summary</h2>
+            <hr style="width:200px;" class="new1">
+            As a doctoral researcher at the University of Helsinki, I studied radiation damage in high entropy alloys, in the
+            context of structural components for nuclear reactors. All studies were purely computational, using molecular dynamics
+            to simulate prolonged irradiation in the investigated materials. Results from the studies were published in several
+            peer-reviewed articles, as well as my doctoral dissertation “Radiation Damage in High Entropy Alloys” (see publications
+            below).
+            <br><br>
+            <strong>Responsibilities:</strong> Running molecular dynamics simulations, analysing simulation data, authoring papers presenting results, teaching.
+            <br><br>
+            <strong>Tools:</strong> Linux, CSC supercomputers, Python, OVITO, PARCAS (molecular dynamics code).
+        </div>
+
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Publications</h2>
+            <hr style="width:200px;" class="new1">
+            <ul>
+                <li><a href="https://helda.helsinki.fi/handle/10138/337574" class="w3-block w3-left-align">Radiation Damage in High
+                        Entropy Alloys (doctoral dissertation)</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/pii/S0927025621002986?via%3Dihub"
+                        class="w3-block w3-left-align">Temperature effect on irradiation damage in equiatomic multi-component
+                        alloys</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0022311516313484?via%3Dihub"
+                        class="w3-block w3-left-align">Radiation damage buildup and dislocation evolution in Ni and equiatomic
+                        multicomponent Ni-based alloys</a></li>
+                <li><a href="https://link.springer.com/article/10.1557/jmr.2019.19" class="w3-block w3-left-align">Radiation
+                        stability of nanocrystalline single-phase multicomponent alloys</a></li>
+                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168583X16304827?via%3Dihub"
+                        class="w3-block w3-left-align">Damage buildup and edge dislocation mobility in equiatomic multicomponent
+                        alloys</a></li>
+            </ul>
+        </div>
+
+        <!-- Doctoral Defence -->
+        <div class="w3-content w3-justify w3-text-black w3-padding-32">
+            <h2>Doctoral Defence</h2>
+            <hr style="width:200px;" class="new1">
+                <iframe width="640" height="480" src="https://www.youtube.com/embed/bZREgHPAyFU" allowfullscreen="allowfullscreen"
+                    video="width:auto;height:100%"></iframe>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://github.com/CurlyNikolai"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/emil-levo"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>
