@@ -74,6 +74,32 @@
     a:active {
         text-decoration: underline;
     }
+
+    .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+    .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    }
+
+    .center-iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    }
+
 </style>
 
 <body class="w3-white">
@@ -195,8 +221,10 @@
         <div class="w3-content w3-justify w3-text-black w3-padding-32">
             <h2>Doctoral Defence</h2>
             <hr style="width:200px;" class="new1">
-                <iframe width="640" height="480" src="https://www.youtube.com/embed/bZREgHPAyFU" allowfullscreen="allowfullscreen"
-                    video="width:auto;height:100%"></iframe>
+            <div class="container">
+                <iframe class="responsive-iframe center-iframe" src="https://www.youtube.com/embed/bZREgHPAyFU"
+                    allowfullscreen="allowfullscreen"></iframe>
+            </div>
         </div>
 
 
