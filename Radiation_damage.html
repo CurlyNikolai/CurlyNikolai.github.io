@@ -6,88 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
 <script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-
-    hr.new1 {
-        border-top: 1px solid black;
-    }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-        margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
-    }
-
-    a:link {
-        text-decoration: none;
-    }
-
-    a:visited {
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    a:active {
-        text-decoration: underline;
-    }
-
-    .container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    }
-
-    /* Then style the iframe to fit in the container div with full height and width */
-    .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: 80%;
-    }
-
-    .center-iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 80%;
-    }
-
-</style>
 
 <body class="w3-white">
 
@@ -105,26 +25,25 @@
                 <p>ABOUT</p>
             </a>
             <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
-                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">CV</a>
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-regular fa-file-lines w3-medium" style="vertical-align:middle"></i>
+                    CV</a>
             </div>
         </div>
         <div class="w3-dropdown-hover">
-            <a href="/#research" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
-                <i class="fa-solid fa-atom w3-xxlarge"></i>
-                <p>RESEARCH</p>
+            <a href="/#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-briefcase w3-xxlarge"></i>
+                <p>PROJECTS</p>
             </a>
             <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
-                <a href="/Radiation_damage.html" class="w3-bar-item w3-button w3-hover-blue"
-                    style="text-decoration:None;">Radiation Damage in High Entropy Alloys</a>
-            </div>
-        </div>
-        <div class="w3-dropdown-hover">
-            <a href="/#games" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
-                <i class="fa-solid fa-gamepad w3-xxlarge"></i>
-                <p>GAMES</p>
-            </a>
-            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
-                <a href="/zeus.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">ZEUS</a>
+                <a href="/#research" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-microscope w3-medium" style="vertical-align:middle"></i>
+                    RESEARCH
+                </a>
+                <a href="/#games" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-gamepad w3-medium" style="vertical-align:middle"></i>
+                    GAMES
+                </a>
             </div>
         </div>
         <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
@@ -137,46 +56,25 @@
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="/#" class="w3-bar-item w3-button"
-                style="text-decoration:None;font-size:smaller;width:20% !important">HOME</a>
-            <div class="w3-dropdown-hover" style="width:20% !important">
-                <button onclick="window.location.href='/#about';" class="w3-button" style="font-size:smaller">ABOUT</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/CV.html" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller">CV</a>
-                </div>
-            </div>
-            <div class="w3-dropdown-hover" style="width:20% !important">
-                <button onclick="window.location.href='/#research';" class="w3-button"
-                    style="font-size:smaller">RESEARCH</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/Radiation_damage.html" class="w3-bar-item w3-button"
-                        style="text-decoration:None;font-size:smaller">Radiation
-                        Damage in High Entropy Alloys</a>
-                </div>
-            </div>
-            <div class="w3-dropdown-hover" style="width:20% !important">
-                <button onclick="window.location.href='/#games';" class="w3-button" style="font-size:smaller">GAMES</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/zeus.html" class="w3-bar-item w3-button"
-                        style="text-decoration:None;font-size:smaller">ZEUS</a>
-                </div>
-            </div>
+                style="text-decoration:None;font-size:smaller;width:25% !important">HOME</a>
+            <a href="/#about" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">ABOUT</a>
+            <a href="/#projects" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">PROJECTS</a>
             <a href="/#contact" class="w3-bar-item w3-button"
-                style="text-decoration:None;font-size:smaller;width:20% !important">CONTACT</a>
+                style="text-decoration:None;font-size:smaller;width:25% !important">CONTACT</a>
         </div>
     </div>
 
     <!-- Page Content -->
     <div class="w3-padding-large" id="main">
-        
-        <!-- Header/Home -->
+
+        <!-- Header-->
         <header class="w3-container w3-padding-32 w3-center w3-white">
             <h1 class="w3-jumbo w3-hide-small">Radiation Damage in High Entropy Alloys</h1>
             <h1 class="w3-xxlarge w3-hide-large w3-hide-medium">Radiation Damage in High Entropy Alloys</h1>
-            <br><br>
-            <img src="images/ternary.png" alt="ternary" class="w3-image" width="400" height="400">
-            <img src="images/entropy_equation.jpg" alt="equation" class="w3-image" width="400" height="400"><br><br>
         </header>
-        
+
         <div class="w3-content w3-justify w3-text-black w3-padding-32">
             <h2>Summary</h2>
             <hr style="width:200px;" class="new1">
@@ -220,7 +118,6 @@
                     allowfullscreen="allowfullscreen"></iframe>
             </div>
         </div>
-
 
         <!-- Footer -->
         <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
