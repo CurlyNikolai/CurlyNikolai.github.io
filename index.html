@@ -6,88 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
 <script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
-<style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: "Montserrat", sans-serif
-    }
-
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
-
-    hr.new1 {
-        border-top: 1px solid black;
-    }
-
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-        background: #222;
-    }
-
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-        margin-left: 120px
-    }
-
-    /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {
-        #main {
-            margin-left: 0
-        }
-    }
-
-    a:link {
-        text-decoration: none;
-    }
-
-    a:visited {
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    a:active {
-        text-decoration: underline;
-    }
-
-    .container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-    }
-
-    /* Then style the iframe to fit in the container div with full height and width */
-    .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 80%;
-    height: 80%;
-    }
-
-    .center-iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 80%;
-    }
-
-</style>
 
 <body class="w3-white">
 
@@ -105,25 +25,25 @@
                 <p>ABOUT</p>
             </a>
             <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
-                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">CV</a>
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-regular fa-file-lines w3-medium" style="vertical-align:middle"></i>
+                    CV</a>
             </div>
         </div>
         <div class="w3-dropdown-hover">
-            <a href="/#research" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
-                <i class="fa-solid fa-atom w3-xxlarge"></i>
-                <p>RESEARCH</p>
+            <a href="/#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-briefcase w3-xxlarge"></i>
+                <p>PROJECTS</p>
             </a>
             <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
-                <a href="/Radiation_damage.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">Radiation Damage in High Entropy Alloys</a>
-            </div>
-        </div>
-        <div class="w3-dropdown-hover">
-            <a href="/#games" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
-                <i class="fa-solid fa-gamepad w3-xxlarge"></i>
-                <p>GAMES</p>
-            </a>
-            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
-                <a href="/zeus.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">ZEUS</a>
+                <a href="/#research" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-microscope w3-medium" style="vertical-align:middle"></i>
+                    RESEARCH
+                </a>
+                <a href="/#games" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-gamepad w3-medium" style="vertical-align:middle"></i> 
+                    GAMES
+                </a>
             </div>
         </div>
         <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
@@ -135,27 +55,10 @@
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a href="/#" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller;width:20% !important">HOME</a>
-            <div class="w3-dropdown-hover" style="width:20% !important">
-                <button onclick="window.location.href='/#about';" class="w3-button" style="font-size:smaller">ABOUT</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/CV.html" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller">CV</a>
-                </div>
-            </div>
-            <div class="w3-dropdown-hover" style="width:20% !important">
-                <button onclick="window.location.href='/#research';" class="w3-button" style="font-size:smaller">RESEARCH</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/Radiation_damage.html" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller">Radiation
-                        Damage in High Entropy Alloys</a>
-                </div>
-            </div>
-            <div class="w3-dropdown-hover" style="width:20% !important">
-                <button onclick="window.location.href='/#games';" class="w3-button" style="font-size:smaller">GAMES</button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/zeus.html" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller">ZEUS</a>
-                </div>
-            </div>
-            <a href="/#contact" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller;width:20% !important">CONTACT</a>
+            <a href="/#" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller;width:25% !important">HOME</a>
+            <a href="/#about" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller;width:25% !important">ABOUT</a>
+            <a href="/#projects" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller;width:25% !important">PROJECTS</a>
+            <a href="/#contact" class="w3-bar-item w3-button" style="text-decoration:None;font-size:smaller;width:25% !important">CONTACT</a>
         </div>
     </div>
 
@@ -192,76 +95,47 @@
 
             <!-- End About Section -->
         </div>
-        
-        <!-- Research Section -->
-        <div class="w3-content w3-justify w3-text-black w3-padding-64" id="research">
-            <h2>Research</h2>
-            <hr style="width:200px;", class="new1">
 
-            <a href="/Radiation_damage.html">
-                <h3>Radiation Damage in High Entropy Alloys</h3>
-            </a>
-            <p>
-                As a doctoral researcher at the University of Helsinki, I studied radiation damage in high entropy alloys, in the
-                context of structural components for nuclear reactors. All studies were purely computational, using molecular dynamics
-                to simulate prolonged irradiation in the investigated materials. Results from the studies were published in several
-                peer-reviewed articles, as well as my doctoral dissertation “Radiation Damage in High Entropy Alloys”
-            </p>
+        <div class="w3-content w3-padding-64" id="projects">
+            <h2>Projects</h2>
+            <hr style="width:200px;" , class="new1">
 
-
-            <button onclick="myFunction('Defence')" class="w3-button w3-block w3-light-grey w3-left-align">Doctoral Defence <i class="fa fa-caret-down"></i></button>
-            <div id="Defence" class="w3-hide">
-                <div class="container w3-animate-zoom">
-                    <iframe class="responsive-iframe center-iframe" src="https://www.youtube.com/embed/bZREgHPAyFU" allowfullscreen="allowfullscreen"></iframe>
-                </div>
-            </div>
-            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-light-grey w3-left-align">Publications <i class="fa fa-caret-down"></i></button>
-            <div id="Demo1" class="w3-hide w3-animate-zoom">
-                <ul>
-                <li><a href="https://helda.helsinki.fi/handle/10138/337574" class="w3-block w3-left-align">Radiation Damage in High Entropy Alloys (doctoral dissertation)</a></li>
-                <li><a href="https://www.sciencedirect.com/science/article/pii/S0927025621002986?via%3Dihub" class="w3-block w3-left-align">Temperature effect on irradiation damage in equiatomic multi-component alloys</a></li>
-                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0022311516313484?via%3Dihub" class="w3-block w3-left-align">Radiation damage buildup and dislocation evolution in Ni and equiatomic multicomponent Ni-based alloys</a></li>
-                <li><a href="https://link.springer.com/article/10.1557/jmr.2019.19" class="w3-block w3-left-align">Radiation stability of nanocrystalline single-phase multicomponent alloys</a></li>
-                <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0168583X16304827?via%3Dihub" class="w3-block w3-left-align">Damage buildup and edge dislocation mobility in equiatomic multicomponent alloys</a></li>
-                </ul>
-            </div>
-            
-            <script>
-                function myFunction(id) {
-                    var x = document.getElementById(id);
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else {
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                }
-            </script>
-
-            <!-- End Research Section -->
-        </div>
-
-        <!-- Games Section -->
-        <div class="w3-content w3-justify w3-text-black w3-padding-64" id="games">
-            <h2 class="w3-text-black">Games</h2>
-            <hr style="width:200px" class="new1">
-
-            <!-- Project 1 -->
-            <div class="w3-row-padding w3-margin-top">
-                <a href="/zeus.html">
-                <div class="w3-half">
-                    <div class="w3-card-4 w3-opacity-min w3-hover-opacity-off">
-                        <img src="images/zeus.png" style="width:100%">
-                        <div class="w3-container">
-                            <strong>ZEUS</strong>
-                            <p>Arcady mini game created for the Global Game Jam 20-30 January 2020. Goal of the game is to remove all polluting
-                            elements from the globe, before the planet’s atmosphere is destroyed.</p>
+            <div class="w3-padding-32" id="research">
+                <h3>Research</h3>
+                <!-- Radiation Damage Card -->
+                <div class="w3-row-padding w3-margin-top">
+                    <a href="/Radiation_damage.html">
+                        <div class="w3-third">
+                            <div class="w3-card-4 w3-opacity-min w3-hover-opacity-off">
+                                <img src="images/ternary.png" style="width:85%;padding-left:15%;">
+                                <div class="w3-container">
+                                    <strong>Radiation Damage in High Entropy Alloys</strong>
+                                    <p>Doctoral research of radiation damage in high entropy alloys.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                </a>
             </div>
 
-            <!-- End Games Section -->
+            <div class="w3-padding-32" id="games">
+                <h3>Games</h3>
+                <!-- ZEUS Card -->
+                <div class="w3-row-padding w3-margin-top">
+                    <a href="/zeus.html">
+                        <div class="w3-third">
+                            <div class="w3-card-4 w3-opacity-min w3-hover-opacity-off">
+                                <img src="images/zeus.png" style="width:100%">
+                                <div class="w3-container">
+                                    <strong>ZEUS</strong>
+                                    <p>Arcady mini game of an alien trying to save the world from climate change.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </div>
         
         <!-- Contact Section -->
