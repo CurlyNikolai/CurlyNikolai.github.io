@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Emil Levo Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
+
+
+<body class="w3-white">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="/images/profpic.jpg" style="width:100%">
+        <a href="/#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <div class="w3-dropdown-hover">
+            <a href="/#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>ABOUT</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-regular fa-file-lines w3-small" style="vertical-align:middle"></i>
+                    CV</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-briefcase w3-xxlarge"></i>
+                <p>PROJECTS</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/#research" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-microscope w3-small" style="vertical-align:middle"></i>
+                    RESEARCH
+                </a>
+                <a href="/#games" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-gamepad w3-small" style="vertical-align:middle"></i>
+                    GAMES
+                </a>
+                <a href="/#schoolwork" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-graduation-cap w3-small" style="vertical-align:middle"></i>
+                    SCHOOL
+                </a>
+            </div>
+        </div>
+        <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="/#" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">HOME</a>
+            <a href="/#about" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">ABOUT</a>
+            <a href="/#projects" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">PROJECTS</a>
+            <a href="/#contact" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-white">
+            <h1 class="w3-jumbo w3-hide-small">Elemental Exemplars</h1>
+            <h1 class="w3-xxlarge w3-hide-large w3-hide-medium">Elemental Exemplars</h1>
+        </header>
+
+        <div class="w3-content w3-text-black w3-padding-32">
+            <h2>Summary</h2>
+            <hr style="width:200px;" class="new1">
+            Race to the end with a friend and your followers! The followers are the key to this
+            puzzle, but beware! Fire and water don't mix. 
+            <br><br>
+            Puzzle/race game created for the Global Game Jam in January 2022. Goal of the game is 
+            to get to the end of the level as quickly as possible. 
+            <br><br>
+            <strong>Responsibilities:</strong> Programming follower behaviour. Level/puzzle design.   
+            <br><br>
+            <strong>Tools:</strong> Unity, C#
+            <br><br>
+            <strong>Github:</strong> <a href="https://github.com/HeavenlyAwe/fgj22">github.com/HeavenlyAwe/fgj22</a>.
+        </div>
+
+        <div class="w3-content w3-text-black w3-padding-32">
+            <h2>Gameplay Video</h2>
+            <hr style="width:200px;" class="new1">
+            <div class="container">
+                <iframe class="responsive-iframe center-iframe" src="https://www.youtube.com/embed/XZNolODZhqI" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://github.com/CurlyNikolai"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/emil-levo"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>
