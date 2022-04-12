@@ -78,3 +78,26 @@ a:active {
     margin-bottom: auto;
     width: 80%;
 }
+
+/* The loading bars in CV for programming/game engine */
+
+.loading-bar-loaded, .loading-bar-outline {
+    text-indent:0.5em;
+    line-height:28px;
+    display: inline-block;
+    height:28px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.loading-bar-outline {
+    border-radius: 25px;
+    z-index:900;
+    outline-color: lightgray;
+    outline-style:solid;
+}
+
+.loading-bar-loaded {
+    border-radius: 12px;
+    background-color: lightgray;
+}
