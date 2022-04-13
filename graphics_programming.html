@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>Emil Levo Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/1c0badab2d.js" crossorigin="anonymous"></script>
+
+
+<body class="w3-white">
+
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-light-grey w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="/images/profpic.jpg" style="width:100%">
+        <a href="/#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <div class="w3-dropdown-hover">
+            <a href="/#about" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>ABOUT</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/CV.html" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-regular fa-file-lines w3-small" style="vertical-align:middle"></i>
+                    CV</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <a href="/#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+                <i class="fa-solid fa-briefcase w3-xxlarge"></i>
+                <p>PROJECTS</p>
+            </a>
+            <div class="w3-dropdown-content w3-bar-block w3-bar-block w3-border">
+                <a href="/#research" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-microscope w3-small" style="vertical-align:middle"></i>
+                    RESEARCH
+                </a>
+                <a href="/#games" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-gamepad w3-small" style="vertical-align:middle"></i>
+                    GAMES
+                </a>
+                <a href="/#schoolwork" class="w3-bar-item w3-button w3-hover-blue" style="text-decoration:None;">
+                    <i class="fa-solid fa-graduation-cap w3-small" style="vertical-align:middle"></i>
+                    SCHOOL
+                </a>
+            </div>
+        </div>
+        <a href="/#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-blue" style="text-decoration:None;">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="/#" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">HOME</a>
+            <a href="/#about" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">ABOUT</a>
+            <a href="/#projects" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">PROJECTS</a>
+            <a href="/#contact" class="w3-bar-item w3-button"
+                style="text-decoration:None;font-size:smaller;width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-white">
+            <h1 class="w3-jumbo w3-hide-small">Graphics Programming</h1>
+            <h1 class="w3-xxlarge w3-hide-large w3-hide-medium">Graphics Programming</h1>
+        </header>
+
+        <div class="w3-content w3-text-black w3-padding-32">
+            <h2>Summary</h2>
+            <hr style="width:200px;" class="new1">
+            Aalto University offers an introductory, and an advanced, course in computer graphics. The introductory course offers a practical introduction to the field of graphics, 
+            with exercises and theory on topics such as animation, physical simulations and ray-tracing. The advanced course focuses more on physically based rendering, and when I took it
+            we got to create our own optimized ray-tracing implementation (bounding volume hierarchies are fun!).
+            The framework for the exercises were given to the students, so everything was not implemented from scratch (e.g.
+            visualization of renderings and scenes), the focus was rather on specific methods that one had to implement. 
+            <br><br>
+            On this page I will present screenshots and videos of results from exercises that I found especially cool.
+            One really nice thing about the course was that in addition to the required exercises there was a bunch of 
+            extra assigments one could do (for extra credit), leaving stuff to do even after the course (never stop the learning)! 
+            Given the time and opportunity, I will probably add more stuff here that I find interesting.
+            <br><br>
+            <strong>Responsibilities:</strong> Implementing various computer graphics methods. 
+            <br><br>
+            <strong>Tools:</strong> C++
+        </div>
+
+        <div class="w3-content w3-text-black w3-padding-32">
+            <div>
+                <img src="images/radiosity.jpg" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                <p style="width:50%; display: block; margin-left: auto; margin-right: auto; text-align: center;">Figure: Radiosity render.</p>
+            </div>
+            <br><br>
+            <div>
+                <img src="images/raytrace_reflection.jpg" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                <p style="width:50%; display: block; margin-left: auto; margin-right: auto; text-align: center;">Figure: Raytracing with reflections.</p>
+            </div>
+            <br><br>
+            <div>
+                <img src="images/cloth_simulation.gif" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                <p style="width:50%; display: block; margin-left: auto; margin-right: auto; text-align: center;">Figure: Cloth
+                    suspended at two corners, with wind turning on/off.</p>
+            </div>
+            <br><br>
+            <div>
+                <img src="images/surface_subdivision.gif" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                <p style="width:50%; display: block; margin-left: auto; margin-right: auto; text-align: center;">Figure: Surface subdivision.</p>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <a href="https://github.com/CurlyNikolai"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/emil-levo"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                    class="w3-hover-text-green">w3.css</a></p>
+            <!-- End footer -->
+        </footer>
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+</body>
+
+</html>
