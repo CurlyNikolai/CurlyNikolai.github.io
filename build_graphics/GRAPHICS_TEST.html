@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>GRAPHICS_TEST</title>
+    <style>
+      body {
+        font-family: arial;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      canvas {
+        display: block;
+        border: none;
+        background-color: black;
+        margin: 0 auto;
+      }
+
+      #output {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        border: none;
+        padding: 10px;
+        background-color: #222;
+        color: #0f0;
+        font-family: 'Lucida Console', Monaco, monospace;
+        resize: none;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- GLFW Canvas -->
+    <canvas id="canvas" tabindex="-1"></canvas>
+
+    <!-- Terminal Output -->
+    <textarea id="output" readonly></textarea>
+
+    <script type="text/javascript">
+      var canvasElement = document.getElementById('canvas');
+      var outputElement = document.getElementById('output');
+
+      // Clear the terminal output on load
+      if (outputElement) outputElement.value = '';
+
+      var Module = {
+        print(...args) {
+          console.log(...args);
+          if (outputElement) {
+            var text = args.join(' ');
+            outputElement.value += text + "\n";
+            outputElement.scrollTop = outputElement.scrollHeight; // Scroll to bottom
+          }
+        },
+        canvas: canvasElement
+      };
+    </script>
+    <script async type="text/javascript" src="GRAPHICS_TEST.js"></script>
+  </body>
+</html>
