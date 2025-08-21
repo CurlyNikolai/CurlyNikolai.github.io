@@ -1,6 +1,0 @@
-/home/emil/repos/imgui_opengl_demo/build_web/CMakeFiles/imgui.dir
-/home/emil/repos/imgui_opengl_demo/build_web/CMakeFiles/imgui_backends.dir
-/home/emil/repos/imgui_opengl_demo/build_web/CMakeFiles/implot.dir
-/home/emil/repos/imgui_opengl_demo/build_web/CMakeFiles/GRAPHICS_TEST.dir
-/home/emil/repos/imgui_opengl_demo/build_web/CMakeFiles/edit_cache.dir
-/home/emil/repos/imgui_opengl_demo/build_web/CMakeFiles/rebuild_cache.dir
