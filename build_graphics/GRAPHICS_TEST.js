@@ -27,7 +27,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmp3qng38p_.js
+// include: /tmp/tmp5jm7h6wq.js
 
   Module['expectedDataFileDownloads'] ??= 0;
   Module['expectedDataFileDownloads']++;
@@ -193,25 +193,25 @@ Module['FS_createPath']("/assets", "shaders", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/images/awesomeface.png", "start": 0, "end": 59277}, {"filename": "/assets/images/brick_wall.jpg", "start": 59277, "end": 316266}, {"filename": "/assets/images/container.jpg", "start": 316266, "end": 501205}, {"filename": "/assets/imgui.ini", "start": 501205, "end": 503285}, {"filename": "/assets/shaders/coordinate_system_shader.frag", "start": 503285, "end": 503663}, {"filename": "/assets/shaders/coordinate_system_shader.vert", "start": 503663, "end": 504027}, {"filename": "/assets/shaders/default_shader.frag", "start": 504027, "end": 504154}, {"filename": "/assets/shaders/default_shader.vert", "start": 504154, "end": 504254}, {"filename": "/assets/shaders/texture_shader.frag", "start": 504254, "end": 504632}, {"filename": "/assets/shaders/texture_shader.vert", "start": 504632, "end": 504903}, {"filename": "/assets/shaders/transform_shader.frag", "start": 504903, "end": 505281}, {"filename": "/assets/shaders/transform_shader.vert", "start": 505281, "end": 505589}], "remote_package_size": 505589});
+    loadPackage({"files": [{"filename": "/assets/images/awesomeface.png", "start": 0, "end": 59277}, {"filename": "/assets/images/brick_wall.jpg", "start": 59277, "end": 316266}, {"filename": "/assets/images/container.jpg", "start": 316266, "end": 501205}, {"filename": "/assets/imgui.ini", "start": 501205, "end": 503287}, {"filename": "/assets/shaders/coordinate_system_shader.frag", "start": 503287, "end": 503665}, {"filename": "/assets/shaders/coordinate_system_shader.vert", "start": 503665, "end": 504029}, {"filename": "/assets/shaders/default_shader.frag", "start": 504029, "end": 504156}, {"filename": "/assets/shaders/default_shader.vert", "start": 504156, "end": 504256}, {"filename": "/assets/shaders/texture_shader.frag", "start": 504256, "end": 504634}, {"filename": "/assets/shaders/texture_shader.vert", "start": 504634, "end": 504905}, {"filename": "/assets/shaders/transform_shader.frag", "start": 504905, "end": 505283}, {"filename": "/assets/shaders/transform_shader.vert", "start": 505283, "end": 505591}], "remote_package_size": 505591});
 
   })();
 
-// end include: /tmp/tmp3qng38p_.js
-// include: /tmp/tmp26eljcvb.js
+// end include: /tmp/tmp5jm7h6wq.js
+// include: /tmp/tmp4hhkix7q.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp26eljcvb.js
-// include: /tmp/tmp4fhtweg6.js
+  // end include: /tmp/tmp4hhkix7q.js
+// include: /tmp/tmpbt946394.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp4fhtweg6.js
+  // end include: /tmp/tmpbt946394.js
 
 
 var arguments_ = [];
@@ -4111,11 +4111,20 @@ async function createWasm() {
   
   /** @type {Object} */
   var specialHTMLTargets = [0, typeof document != 'undefined' ? document : 0, typeof window != 'undefined' ? window : 0];
+  /** @suppress {duplicate } */
   var findEventTarget = (target) => {
       target = maybeCStringToJsString(target);
       var domElement = specialHTMLTargets[target] || (typeof document != 'undefined' ? document.querySelector(target) : null);
       return domElement;
     };
+  var findCanvasEventTarget = findEventTarget;
+  var _emscripten_get_canvas_element_size = (target, width, height) => {
+      var canvas = findCanvasEventTarget(target);
+      if (!canvas) return -4;
+      HEAP32[((width)>>2)] = canvas.width;
+      HEAP32[((height)>>2)] = canvas.height;
+    };
+
   
   var getBoundingClientRect = (e) => specialHTMLTargets.indexOf(e) < 0 ? e.getBoundingClientRect() : {'left':0,'top':0};
   var _emscripten_get_element_css_size = (target, width, height) => {
@@ -8807,6 +8816,8 @@ var wasmImports = {
   _tzset_js: __tzset_js,
   /** @export */
   emscripten_err: _emscripten_err,
+  /** @export */
+  emscripten_get_canvas_element_size: _emscripten_get_canvas_element_size,
   /** @export */
   emscripten_get_element_css_size: _emscripten_get_element_css_size,
   /** @export */
