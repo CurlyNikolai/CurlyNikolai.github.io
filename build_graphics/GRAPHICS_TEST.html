@@ -52,6 +52,9 @@
       var canvasElement = document.getElementById('canvas');
       var outputElement = document.getElementById('output');
 
+      // Disable right mouse click context menu showing in app
+      canvasElement.addEventListener('contextmenu', function (e) {e.preventDefault();})
+
       // Clear the terminal output on load
       if (outputElement) outputElement.value = '';
 
