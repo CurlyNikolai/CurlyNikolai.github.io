@@ -71,7 +71,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpmx35zzx9.js
+// include: /tmp/tmpbfm29z6e.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -90,8 +90,8 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.substring(0, location.pathname.lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = 'src/GRAPHICS_TEST.data';
-      var REMOTE_PACKAGE_BASE = 'GRAPHICS_TEST.data';
+      var PACKAGE_NAME = 'src/GraphicsSandbox.data';
+      var REMOTE_PACKAGE_BASE = 'GraphicsSandbox.data';
       var REMOTE_PACKAGE_NAME = Module['locateFile'] ? Module['locateFile'](REMOTE_PACKAGE_BASE, '') : REMOTE_PACKAGE_BASE;
       var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
 
@@ -181,9 +181,9 @@ Module['FS_createPath']("/assets", "shaders", true, true);
         Module['FS_createDataFile'](name, null, data, true, true, true);
         Module['removeRunDependency'](`fp ${name}`);
           }
-          Module['removeRunDependency']('datafile_src/GRAPHICS_TEST.data');
+          Module['removeRunDependency']('datafile_src/GraphicsSandbox.data');
       }
-      Module['addRunDependency']('datafile_src/GRAPHICS_TEST.data');
+      Module['addRunDependency']('datafile_src/GraphicsSandbox.data');
 
       if (!Module['preloadResults']) Module['preloadResults'] = {};
 
@@ -202,25 +202,25 @@ Module['FS_createPath']("/assets", "shaders", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/images/awesomeface.png", "start": 0, "end": 59277}, {"filename": "/assets/images/brick_wall.jpg", "start": 59277, "end": 316266}, {"filename": "/assets/images/container.jpg", "start": 316266, "end": 501205}, {"filename": "/assets/images/container2.png", "start": 501205, "end": 969098}, {"filename": "/assets/images/container2_specular.png", "start": 969098, "end": 1113179}, {"filename": "/assets/images/earth.jpg", "start": 1113179, "end": 1842768}, {"filename": "/assets/images/uv_debug.jpg", "start": 1842768, "end": 2392273}, {"filename": "/assets/imgui.ini", "start": 2392273, "end": 2396330}, {"filename": "/assets/shaders/basic_lighting.frag", "start": 2396330, "end": 2397569}, {"filename": "/assets/shaders/basic_lighting.vert", "start": 2397569, "end": 2398069}, {"filename": "/assets/shaders/colors_scene_shader.frag", "start": 2398069, "end": 2398253}, {"filename": "/assets/shaders/colors_scene_shader.vert", "start": 2398253, "end": 2398450}, {"filename": "/assets/shaders/coordinate_system_shader.frag", "start": 2398450, "end": 2398828}, {"filename": "/assets/shaders/coordinate_system_shader.vert", "start": 2398828, "end": 2399192}, {"filename": "/assets/shaders/default_shader.frag", "start": 2399192, "end": 2399319}, {"filename": "/assets/shaders/default_shader.vert", "start": 2399319, "end": 2399419}, {"filename": "/assets/shaders/light_cube_shader.frag", "start": 2399419, "end": 2399696}, {"filename": "/assets/shaders/light_cube_shader.vert", "start": 2399696, "end": 2399893}, {"filename": "/assets/shaders/lighting_maps.frag", "start": 2399893, "end": 2401427}, {"filename": "/assets/shaders/lighting_maps.vert", "start": 2401427, "end": 2402092}, {"filename": "/assets/shaders/texture_shader.frag", "start": 2402092, "end": 2402470}, {"filename": "/assets/shaders/texture_shader.vert", "start": 2402470, "end": 2402741}, {"filename": "/assets/shaders/transform_shader.frag", "start": 2402741, "end": 2403119}, {"filename": "/assets/shaders/transform_shader.vert", "start": 2403119, "end": 2403427}, {"filename": "/assets/shaders/wireframe.frag", "start": 2403427, "end": 2403979}, {"filename": "/assets/shaders/wireframe.vert", "start": 2403979, "end": 2404415}], "remote_package_size": 2404415});
+    loadPackage({"files": [{"filename": "/assets/images/Copyrights.txt", "start": 0, "end": 884}, {"filename": "/assets/images/awesomeface.png", "start": 884, "end": 60161}, {"filename": "/assets/images/brick_wall.jpg", "start": 60161, "end": 317150}, {"filename": "/assets/images/container.jpg", "start": 317150, "end": 502089}, {"filename": "/assets/images/container2.png", "start": 502089, "end": 969982}, {"filename": "/assets/images/container2_specular.png", "start": 969982, "end": 1114063}, {"filename": "/assets/images/earth.jpg", "start": 1114063, "end": 1843652}, {"filename": "/assets/images/uv_debug.jpg", "start": 1843652, "end": 2393157}, {"filename": "/assets/imgui.ini", "start": 2393157, "end": 2397568}, {"filename": "/assets/shaders/basic_lighting.frag", "start": 2397568, "end": 2398807}, {"filename": "/assets/shaders/basic_lighting.vert", "start": 2398807, "end": 2399307}, {"filename": "/assets/shaders/colors_scene_shader.frag", "start": 2399307, "end": 2399491}, {"filename": "/assets/shaders/colors_scene_shader.vert", "start": 2399491, "end": 2399688}, {"filename": "/assets/shaders/coordinate_system_shader.frag", "start": 2399688, "end": 2400066}, {"filename": "/assets/shaders/coordinate_system_shader.vert", "start": 2400066, "end": 2400430}, {"filename": "/assets/shaders/default_shader.frag", "start": 2400430, "end": 2400557}, {"filename": "/assets/shaders/default_shader.vert", "start": 2400557, "end": 2400657}, {"filename": "/assets/shaders/light_casters.frag", "start": 2400657, "end": 2402191}, {"filename": "/assets/shaders/light_casters.vert", "start": 2402191, "end": 2402856}, {"filename": "/assets/shaders/light_cube_shader.frag", "start": 2402856, "end": 2403133}, {"filename": "/assets/shaders/light_cube_shader.vert", "start": 2403133, "end": 2403330}, {"filename": "/assets/shaders/lighting_maps.frag", "start": 2403330, "end": 2404864}, {"filename": "/assets/shaders/lighting_maps.vert", "start": 2404864, "end": 2405529}, {"filename": "/assets/shaders/texture_shader.frag", "start": 2405529, "end": 2405907}, {"filename": "/assets/shaders/texture_shader.vert", "start": 2405907, "end": 2406178}, {"filename": "/assets/shaders/transform_shader.frag", "start": 2406178, "end": 2406556}, {"filename": "/assets/shaders/transform_shader.vert", "start": 2406556, "end": 2406864}, {"filename": "/assets/shaders/wireframe.frag", "start": 2406864, "end": 2407416}, {"filename": "/assets/shaders/wireframe.vert", "start": 2407416, "end": 2407852}], "remote_package_size": 2407852});
 
   })();
 
-// end include: /tmp/tmpmx35zzx9.js
-// include: /tmp/tmpr43mtftg.js
+// end include: /tmp/tmpbfm29z6e.js
+// include: /tmp/tmpwd1vdyru.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmpr43mtftg.js
-// include: /tmp/tmpx86aaa_f.js
+  // end include: /tmp/tmpwd1vdyru.js
+// include: /tmp/tmpduwtp2ft.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmpx86aaa_f.js
+  // end include: /tmp/tmpduwtp2ft.js
 
 
 var arguments_ = [];
@@ -748,7 +748,7 @@ function createExportWrapper(name, nargs) {
 var wasmBinaryFile;
 
 function findWasmBinary() {
-  return locateFile('GRAPHICS_TEST.wasm');
+  return locateFile('GraphicsSandbox.wasm');
 }
 
 function getBinarySync(file) {
