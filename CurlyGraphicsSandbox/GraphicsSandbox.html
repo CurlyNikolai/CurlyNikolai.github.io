@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>GraphicsSandbox</title>
+    <style>
+      body {
+        font-family: arial;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      canvas {
+        display: block;
+        border: none;
+        background-color: black;
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- GLFW Canvas -->
+    <canvas id="canvas" tabindex="-1"></canvas>
+
+    <script type="text/javascript">
+      var canvasElement = document.getElementById('canvas');
+
+      // Disable right mouse click context menu showing in app
+      canvasElement.addEventListener('contextmenu', function (e) {e.preventDefault();})
+
+      var Module = {
+        print(...args) {
+          console.log(...args);
+        },
+        canvas: canvasElement
+      };
+    </script>
+    <script async type="text/javascript" src="GraphicsSandbox.js"></script>
+  </body>
+</html>
