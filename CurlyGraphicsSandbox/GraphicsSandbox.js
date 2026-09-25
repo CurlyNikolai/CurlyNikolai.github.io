@@ -71,7 +71,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpht5zocm1.js
+// include: /tmp/tmpins4uprw.js
 
   if (!Module['expectedDataFileDownloads']) Module['expectedDataFileDownloads'] = 0;
   Module['expectedDataFileDownloads']++;
@@ -161,6 +161,8 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
       }
 Module['FS_createPath']("/", "assets", true, true);
 Module['FS_createPath']("/assets", "images", true, true);
+Module['FS_createPath']("/assets", "models", true, true);
+Module['FS_createPath']("/assets/models", "backpack", true, true);
 Module['FS_createPath']("/assets", "shaders", true, true);
 
     for (var file of metadata['files']) {
@@ -202,25 +204,25 @@ Module['FS_createPath']("/assets", "shaders", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/assets/images/Copyrights.txt", "start": 0, "end": 884}, {"filename": "/assets/images/awesomeface.png", "start": 884, "end": 60161}, {"filename": "/assets/images/brick_wall.jpg", "start": 60161, "end": 317150}, {"filename": "/assets/images/container.jpg", "start": 317150, "end": 502089}, {"filename": "/assets/images/container2.png", "start": 502089, "end": 969982}, {"filename": "/assets/images/container2_specular.png", "start": 969982, "end": 1114063}, {"filename": "/assets/images/earth.jpg", "start": 1114063, "end": 1843652}, {"filename": "/assets/images/uv_debug.jpg", "start": 1843652, "end": 2393157}, {"filename": "/assets/imgui.ini", "start": 2393157, "end": 2398303}, {"filename": "/assets/shaders/basic_lighting.frag", "start": 2398303, "end": 2399542}, {"filename": "/assets/shaders/basic_lighting.vert", "start": 2399542, "end": 2400042}, {"filename": "/assets/shaders/colors_scene_shader.frag", "start": 2400042, "end": 2400226}, {"filename": "/assets/shaders/colors_scene_shader.vert", "start": 2400226, "end": 2400423}, {"filename": "/assets/shaders/coordinate_system_shader.frag", "start": 2400423, "end": 2400801}, {"filename": "/assets/shaders/coordinate_system_shader.vert", "start": 2400801, "end": 2401165}, {"filename": "/assets/shaders/default_shader.frag", "start": 2401165, "end": 2401292}, {"filename": "/assets/shaders/default_shader.vert", "start": 2401292, "end": 2401392}, {"filename": "/assets/shaders/light_casters.vert", "start": 2401392, "end": 2402057}, {"filename": "/assets/shaders/light_casters_directional.frag", "start": 2402057, "end": 2403584}, {"filename": "/assets/shaders/light_casters_point.frag", "start": 2403584, "end": 2405430}, {"filename": "/assets/shaders/light_casters_spot.frag", "start": 2405430, "end": 2407483}, {"filename": "/assets/shaders/light_cube_shader.frag", "start": 2407483, "end": 2407760}, {"filename": "/assets/shaders/light_cube_shader.vert", "start": 2407760, "end": 2407957}, {"filename": "/assets/shaders/lighting_maps.frag", "start": 2407957, "end": 2409491}, {"filename": "/assets/shaders/lighting_maps.vert", "start": 2409491, "end": 2410156}, {"filename": "/assets/shaders/multiple_lights.frag", "start": 2410156, "end": 2415165}, {"filename": "/assets/shaders/multiple_lights.vert", "start": 2415165, "end": 2415830}, {"filename": "/assets/shaders/texture_shader.frag", "start": 2415830, "end": 2416208}, {"filename": "/assets/shaders/texture_shader.vert", "start": 2416208, "end": 2416479}, {"filename": "/assets/shaders/transform_shader.frag", "start": 2416479, "end": 2416857}, {"filename": "/assets/shaders/transform_shader.vert", "start": 2416857, "end": 2417165}, {"filename": "/assets/shaders/wireframe.frag", "start": 2417165, "end": 2417717}, {"filename": "/assets/shaders/wireframe.vert", "start": 2417717, "end": 2418153}], "remote_package_size": 2418153});
+    loadPackage({"files": [{"filename": "/assets/images/Copyrights.txt", "start": 0, "end": 884}, {"filename": "/assets/images/awesomeface.png", "start": 884, "end": 60161}, {"filename": "/assets/images/brick_wall.jpg", "start": 60161, "end": 317150}, {"filename": "/assets/images/container.jpg", "start": 317150, "end": 502089}, {"filename": "/assets/images/container2.png", "start": 502089, "end": 969982}, {"filename": "/assets/images/container2_specular.png", "start": 969982, "end": 1114063}, {"filename": "/assets/images/earth.jpg", "start": 1114063, "end": 1843652}, {"filename": "/assets/images/uv_debug.jpg", "start": 1843652, "end": 2393157}, {"filename": "/assets/imgui.ini", "start": 2393157, "end": 2398673}, {"filename": "/assets/models/backpack/ao.jpg", "start": 2398673, "end": 4293799}, {"filename": "/assets/models/backpack/backpack.mtl", "start": 4293799, "end": 4294077}, {"filename": "/assets/models/backpack/backpack.obj", "start": 4294077, "end": 11292117}, {"filename": "/assets/models/backpack/diffuse.jpg", "start": 11292117, "end": 17400972}, {"filename": "/assets/models/backpack/normal.png", "start": 17400972, "end": 32615843}, {"filename": "/assets/models/backpack/roughness.jpg", "start": 32615843, "end": 37004093}, {"filename": "/assets/models/backpack/source_attribution.txt", "start": 37004093, "end": 37004403}, {"filename": "/assets/models/backpack/specular.jpg", "start": 37004403, "end": 43726699}, {"filename": "/assets/shaders/basic_lighting.frag", "start": 43726699, "end": 43727938}, {"filename": "/assets/shaders/basic_lighting.vert", "start": 43727938, "end": 43728438}, {"filename": "/assets/shaders/colors_scene_shader.frag", "start": 43728438, "end": 43728622}, {"filename": "/assets/shaders/colors_scene_shader.vert", "start": 43728622, "end": 43728819}, {"filename": "/assets/shaders/coordinate_system_shader.frag", "start": 43728819, "end": 43729197}, {"filename": "/assets/shaders/coordinate_system_shader.vert", "start": 43729197, "end": 43729561}, {"filename": "/assets/shaders/default_shader.frag", "start": 43729561, "end": 43729688}, {"filename": "/assets/shaders/default_shader.vert", "start": 43729688, "end": 43729788}, {"filename": "/assets/shaders/light_casters.vert", "start": 43729788, "end": 43730453}, {"filename": "/assets/shaders/light_casters_directional.frag", "start": 43730453, "end": 43731980}, {"filename": "/assets/shaders/light_casters_point.frag", "start": 43731980, "end": 43733826}, {"filename": "/assets/shaders/light_casters_spot.frag", "start": 43733826, "end": 43735879}, {"filename": "/assets/shaders/light_cube_shader.frag", "start": 43735879, "end": 43736156}, {"filename": "/assets/shaders/light_cube_shader.vert", "start": 43736156, "end": 43736353}, {"filename": "/assets/shaders/lighting_maps.frag", "start": 43736353, "end": 43737887}, {"filename": "/assets/shaders/lighting_maps.vert", "start": 43737887, "end": 43738552}, {"filename": "/assets/shaders/multiple_lights.frag", "start": 43738552, "end": 43743561}, {"filename": "/assets/shaders/multiple_lights.vert", "start": 43743561, "end": 43744226}, {"filename": "/assets/shaders/texture_shader.frag", "start": 43744226, "end": 43744604}, {"filename": "/assets/shaders/texture_shader.vert", "start": 43744604, "end": 43744875}, {"filename": "/assets/shaders/transform_shader.frag", "start": 43744875, "end": 43745253}, {"filename": "/assets/shaders/transform_shader.vert", "start": 43745253, "end": 43745561}, {"filename": "/assets/shaders/wireframe.frag", "start": 43745561, "end": 43746113}, {"filename": "/assets/shaders/wireframe.vert", "start": 43746113, "end": 43746549}], "remote_package_size": 43746549});
 
   })();
 
-// end include: /tmp/tmpht5zocm1.js
-// include: /tmp/tmp5yfbb4tk.js
+// end include: /tmp/tmpins4uprw.js
+// include: /tmp/tmpew4o9mck.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if ((typeof ENVIRONMENT_IS_WASM_WORKER != 'undefined' && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != 'undefined' && ENVIRONMENT_IS_AUDIO_WORKLET)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp5yfbb4tk.js
-// include: /tmp/tmp6k810r1l.js
+  // end include: /tmp/tmpew4o9mck.js
+// include: /tmp/tmpb4c2psr3.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp6k810r1l.js
+  // end include: /tmp/tmpb4c2psr3.js
 
 
 var arguments_ = [];
@@ -1198,16 +1200,6 @@ async function createWasm() {
       assert(false, 'Exception thrown, but exception catching is not enabled. Compile with -sNO_DISABLE_EXCEPTION_CATCHING or -sEXCEPTION_CATCHING_ALLOWED=[..] to catch.');
     };
 
-  var syscallGetVarargI = () => {
-      assert(SYSCALLS.varargs != undefined);
-      // the `+` prepended here is necessary to convince the JSCompiler that varargs is indeed a number.
-      var ret = HEAP32[((+SYSCALLS.varargs)>>2)];
-      SYSCALLS.varargs += 4;
-      return ret;
-    };
-  var syscallGetVarargP = syscallGetVarargI;
-  
-  
   var PATH = {
   isAbs:(path) => path.charAt(0) === '/',
   splitPath:(filename) => {
@@ -1831,6 +1823,13 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   write(stream, buffer, offset, length, position, canOwn) {
           // The data buffer should be a typed array view
           assert(!(buffer instanceof ArrayBuffer));
+          // If the buffer is located in main memory (HEAP), and if
+          // memory can grow, we can't hold on to references of the
+          // memory buffer, as they may get invalidated. That means we
+          // need to copy its contents.
+          if (buffer.buffer === HEAP8.buffer) {
+            canOwn = false;
+          }
   
           if (!length) return 0;
           var node = stream.node;
@@ -3865,6 +3864,28 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
         return ret;
       },
   };
+  function ___syscall_chdir(path) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      FS.chdir(path);
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
+  var syscallGetVarargI = () => {
+      assert(SYSCALLS.varargs != undefined);
+      // the `+` prepended here is necessary to convince the JSCompiler that varargs is indeed a number.
+      var ret = HEAP32[((+SYSCALLS.varargs)>>2)];
+      SYSCALLS.varargs += 4;
+      return ret;
+    };
+  var syscallGetVarargP = syscallGetVarargI;
+  
+  
   function ___syscall_fcntl64(fd, cmd, varargs) {
   SYSCALLS.varargs = varargs;
   try {
@@ -3925,10 +3946,26 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   }
   }
 
+  
   var stringToUTF8 = (str, outPtr, maxBytesToWrite) => {
       assert(typeof maxBytesToWrite == 'number', 'stringToUTF8(str, outPtr, maxBytesToWrite) is missing the third parameter that specifies the length of the output buffer!');
       return stringToUTF8Array(str, HEAPU8, outPtr, maxBytesToWrite);
     };
+  function ___syscall_getcwd(buf, size) {
+  try {
+  
+      if (size === 0) return -28;
+      var cwd = FS.cwd();
+      var cwdLengthInBytes = lengthBytesUTF8(cwd) + 1;
+      if (size < cwdLengthInBytes) return -68;
+      stringToUTF8(cwd, buf, size);
+      return cwdLengthInBytes;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
   
   function ___syscall_getdents64(fd, dirp, count) {
   try {
@@ -4097,6 +4134,19 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   }
   }
 
+  function ___syscall_mkdirat(dirfd, path, mode) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      path = SYSCALLS.calculateAt(dirfd, path);
+      FS.mkdir(path, mode, 0);
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
   function ___syscall_newfstatat(dirfd, path, buf, flags) {
   try {
   
@@ -4128,11 +4178,65 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   }
   }
 
+  
+  
+  function ___syscall_readlinkat(dirfd, path, buf, bufsize) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      path = SYSCALLS.calculateAt(dirfd, path);
+      if (bufsize <= 0) return -28;
+      var ret = FS.readlink(path);
+  
+      var len = Math.min(bufsize, lengthBytesUTF8(ret));
+      var endChar = HEAP8[buf+len];
+      stringToUTF8(ret, buf, bufsize+1);
+      // readlink is one of the rare functions that write out a C string, but does never append a null to the output buffer(!)
+      // stringToUTF8() always appends a null byte, so restore the character under the null byte after the write.
+      HEAP8[buf+len] = endChar;
+      return len;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
+  function ___syscall_rmdir(path) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      FS.rmdir(path);
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
   function ___syscall_stat64(path, buf) {
   try {
   
       path = SYSCALLS.getStr(path);
       return SYSCALLS.writeStat(buf, FS.stat(path));
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
+  function ___syscall_unlinkat(dirfd, path, flags) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      path = SYSCALLS.calculateAt(dirfd, path);
+      if (!flags) {
+        FS.unlink(path);
+      } else if (flags === 512) {
+        FS.rmdir(path);
+      } else {
+        return -28;
+      }
+      return 0;
     } catch (e) {
     if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
     return -e.errno;
@@ -4196,7 +4300,41 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
       }
     };
 
+  var _emscripten_get_now = () => performance.now();
+  
   var _emscripten_date_now = () => Date.now();
+  
+  var nowIsMonotonic = 1;
+  
+  var checkWasiClock = (clock_id) => clock_id >= 0 && clock_id <= 3;
+  
+  var INT53_MAX = 9007199254740992;
+  
+  var INT53_MIN = -9007199254740992;
+  var bigintToI53Checked = (num) => (num < INT53_MIN || num > INT53_MAX) ? NaN : Number(num);
+  function _clock_time_get(clk_id, ignored_precision, ptime) {
+    ignored_precision = bigintToI53Checked(ignored_precision);
+  
+  
+      if (!checkWasiClock(clk_id)) {
+        return 28;
+      }
+      var now;
+      // all wasi clocks but realtime are monotonic
+      if (clk_id === 0) {
+        now = _emscripten_date_now();
+      } else if (nowIsMonotonic) {
+        now = _emscripten_get_now();
+      } else {
+        return 52;
+      }
+      // "now" is in ms, and wasi times are in ns.
+      var nsec = Math.round(now * 1000 * 1000);
+      HEAP64[((ptime)>>3)] = BigInt(nsec);
+      return 0;
+    ;
+  }
+
 
   var _emscripten_err = (str) => err(UTF8ToString(str));
 
@@ -4236,14 +4374,83 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
       return 0;
     };
 
-  var abortOnCannotGrowMemory = (requestedSize) => {
-      abort(`Cannot enlarge memory arrays to size ${requestedSize} bytes (OOM). Either (1) compile with -sINITIAL_MEMORY=X with X higher than the current value ${HEAP8.length}, (2) compile with -sALLOW_MEMORY_GROWTH which allows increasing the size at runtime, or (3) if you want malloc to return NULL (0) instead of this abort, compile with -sABORTING_MALLOC=0`);
+  var getHeapMax = () =>
+      // Stay one Wasm page short of 4GB: while e.g. Chrome is able to allocate
+      // full 4GB Wasm memories, the size will wrap back to 0 bytes in Wasm side
+      // for any code that deals with heap sizes, which would require special
+      // casing all heap size related code to treat 0 specially.
+      2147483648;
+  
+  var alignMemory = (size, alignment) => {
+      assert(alignment, "alignment argument is required");
+      return Math.ceil(size / alignment) * alignment;
+    };
+  
+  var growMemory = (size) => {
+      var oldHeapSize = wasmMemory.buffer.byteLength;
+      var pages = ((size - oldHeapSize + 65535) / 65536) | 0;
+      try {
+        // round size grow request up to wasm page size (fixed 64KB per spec)
+        wasmMemory.grow(pages); // .grow() takes a delta compared to the previous size
+        updateMemoryViews();
+        return 1 /*success*/;
+      } catch(e) {
+        err(`growMemory: Attempted to grow heap from ${oldHeapSize} bytes to ${size} bytes, but got error: ${e}`);
+      }
+      // implicit 0 return to save code size (caller will cast "undefined" into 0
+      // anyhow)
     };
   var _emscripten_resize_heap = (requestedSize) => {
       var oldSize = HEAPU8.length;
       // With CAN_ADDRESS_2GB or MEMORY64, pointers are already unsigned.
       requestedSize >>>= 0;
-      abortOnCannotGrowMemory(requestedSize);
+      // With multithreaded builds, races can happen (another thread might increase the size
+      // in between), so return a failure, and let the caller retry.
+      assert(requestedSize > oldSize);
+  
+      // Memory resize rules:
+      // 1.  Always increase heap size to at least the requested size, rounded up
+      //     to next page multiple.
+      // 2a. If MEMORY_GROWTH_LINEAR_STEP == -1, excessively resize the heap
+      //     geometrically: increase the heap size according to
+      //     MEMORY_GROWTH_GEOMETRIC_STEP factor (default +20%), At most
+      //     overreserve by MEMORY_GROWTH_GEOMETRIC_CAP bytes (default 96MB).
+      // 2b. If MEMORY_GROWTH_LINEAR_STEP != -1, excessively resize the heap
+      //     linearly: increase the heap size by at least
+      //     MEMORY_GROWTH_LINEAR_STEP bytes.
+      // 3.  Max size for the heap is capped at 2048MB-WASM_PAGE_SIZE, or by
+      //     MAXIMUM_MEMORY, or by ASAN limit, depending on which is smallest
+      // 4.  If we were unable to allocate as much memory, it may be due to
+      //     over-eager decision to excessively reserve due to (3) above.
+      //     Hence if an allocation fails, cut down on the amount of excess
+      //     growth, in an attempt to succeed to perform a smaller allocation.
+  
+      // A limit is set for how much we can grow. We should not exceed that
+      // (the wasm binary specifies it, so if we tried, we'd fail anyhow).
+      var maxHeapSize = getHeapMax();
+      if (requestedSize > maxHeapSize) {
+        err(`Cannot enlarge memory, requested ${requestedSize} bytes, but the limit is ${maxHeapSize} bytes!`);
+        return false;
+      }
+  
+      // Loop through potential heap size increases. If we attempt a too eager
+      // reservation that fails, cut down on the attempted size and reserve a
+      // smaller bump instead. (max 3 times, chosen somewhat arbitrarily)
+      for (var cutDown = 1; cutDown <= 4; cutDown *= 2) {
+        var overGrownHeapSize = oldSize * (1 + 0.2 / cutDown); // ensure geometric growth
+        // but limit overreserving (default to capping at +96MB overgrowth at most)
+        overGrownHeapSize = Math.min(overGrownHeapSize, requestedSize + 100663296 );
+  
+        var newSize = Math.min(maxHeapSize, alignMemory(Math.max(requestedSize, overGrownHeapSize), 65536));
+  
+        var replacement = growMemory(newSize);
+        if (replacement) {
+  
+          return true;
+        }
+      }
+      err(`Failed to grow the heap from ${oldSize} bytes to ${newSize} bytes, not enough memory!`);
+      return false;
     };
 
   var onExits = [];
@@ -4681,7 +4888,6 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   };
   
   
-  var _emscripten_get_now = () => performance.now();
   
   
     /**
@@ -5000,10 +5206,6 @@ var stringToUTF8Array = (str, heap, outIdx, maxBytesToWrite) => {
   }
 
   
-  var INT53_MAX = 9007199254740992;
-  
-  var INT53_MIN = -9007199254740992;
-  var bigintToI53Checked = (num) => (num < INT53_MIN || num > INT53_MAX) ? NaN : Number(num);
   function _fd_seek(fd, offset, whence, newOffset) {
     offset = bigintToI53Checked(offset);
   
@@ -8607,8 +8809,6 @@ if (Module['wasmBinary']) wasmBinary = Module['wasmBinary'];
   'setTempRet0',
   'createNamedFunction',
   'zeroMemory',
-  'getHeapMax',
-  'growMemory',
   'withStackSave',
   'inetPton4',
   'inetNtop4',
@@ -8623,7 +8823,6 @@ if (Module['wasmBinary']) wasmBinary = Module['wasmBinary'];
   'runtimeKeepalivePush',
   'runtimeKeepalivePop',
   'asmjsMangle',
-  'alignMemory',
   'HandleAllocator',
   'addOnInit',
   'addOnPostCtor',
@@ -8685,7 +8884,6 @@ if (Module['wasmBinary']) wasmBinary = Module['wasmBinary'];
   'jsStackTrace',
   'getCallstack',
   'convertPCtoSourceLocation',
-  'checkWasiClock',
   'wasiRightsToMuslOFlags',
   'wasiOFlagsToMuslOFlags',
   'setImmediateWrapped',
@@ -8758,7 +8956,8 @@ missingLibrarySymbols.forEach(missingLibrarySymbol)
   'stackAlloc',
   'ptrToString',
   'exitJS',
-  'abortOnCannotGrowMemory',
+  'getHeapMax',
+  'growMemory',
   'ENV',
   'ERRNO_CODES',
   'strError',
@@ -8775,6 +8974,7 @@ missingLibrarySymbols.forEach(missingLibrarySymbol)
   'callUserCallback',
   'maybeExit',
   'asyncLoad',
+  'alignMemory',
   'mmapAlloc',
   'wasmTable',
   'wasmMemory',
@@ -8815,6 +9015,7 @@ missingLibrarySymbols.forEach(missingLibrarySymbol)
   'UNWIND_CACHE',
   'ExitStatus',
   'getEnvStrings',
+  'checkWasiClock',
   'doReadv',
   'doWritev',
   'initRandomFill',
@@ -9069,9 +9270,13 @@ var wasmImports = {
   /** @export */
   __cxa_throw: ___cxa_throw,
   /** @export */
+  __syscall_chdir: ___syscall_chdir,
+  /** @export */
   __syscall_fcntl64: ___syscall_fcntl64,
   /** @export */
   __syscall_fstat64: ___syscall_fstat64,
+  /** @export */
+  __syscall_getcwd: ___syscall_getcwd,
   /** @export */
   __syscall_getdents64: ___syscall_getdents64,
   /** @export */
@@ -9079,15 +9284,25 @@ var wasmImports = {
   /** @export */
   __syscall_lstat64: ___syscall_lstat64,
   /** @export */
+  __syscall_mkdirat: ___syscall_mkdirat,
+  /** @export */
   __syscall_newfstatat: ___syscall_newfstatat,
   /** @export */
   __syscall_openat: ___syscall_openat,
   /** @export */
+  __syscall_readlinkat: ___syscall_readlinkat,
+  /** @export */
+  __syscall_rmdir: ___syscall_rmdir,
+  /** @export */
   __syscall_stat64: ___syscall_stat64,
+  /** @export */
+  __syscall_unlinkat: ___syscall_unlinkat,
   /** @export */
   _abort_js: __abort_js,
   /** @export */
   _tzset_js: __tzset_js,
+  /** @export */
+  clock_time_get: _clock_time_get,
   /** @export */
   emscripten_date_now: _emscripten_date_now,
   /** @export */
